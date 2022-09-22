@@ -174,7 +174,7 @@ const BasicTable = () => {
           transition={{ duration: 1 }}
           className="Table"
         >
-          <h3>Recent Orders</h3>
+          <h3>Recent Featured</h3>
           <TableContainer
             component={Paper}
             style={{ boxShadow: "0px 13px 20px 0px #80808029" }}

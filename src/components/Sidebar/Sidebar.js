@@ -102,7 +102,7 @@ const Sidebar = ({ selected, setSelected }) => {
             onClick={() => setSelected(6)}
           >
             <BsCardChecklist />
-            <span>Orders</span>
+            <span>Featured</span>
           </div>
         </article>
       </motion.div>

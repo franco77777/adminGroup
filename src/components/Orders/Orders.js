@@ -289,7 +289,7 @@ const Orders = ({ visual, setVisual, setEffect2, setEffect3 }) => {
 
   return (
     <div className="order">
-      <h2 className="title">Create Package</h2>
+      <h2 className="title">Create Featured</h2>
       <AnimateSharedLayout>
         <form className="form">
           <motion.div>
