@@ -277,8 +277,14 @@ const BasicTable = () => {
                     <TableCell align="left">{row.arrival.city}</TableCell>
                     <TableCell align="left">{row.amount}</TableCell>
                     <TableCell align="left">
-                      <span className="status" style={makeStyle(1)}>
-                        {i === 0 ? "Approved" : "finalized"}
+                      <span
+                        className="status"
+                        style={{
+                          background: "rgb(145 254 159 / 47%)",
+                          color: "green",
+                        }}
+                      >
+                        Approved
                       </span>
                     </TableCell>
                     <TableCell align="left" className="Details">
@@ -337,8 +343,14 @@ const BasicTable = () => {
                     <TableCell align="left">{row.arrival.city}</TableCell>
                     <TableCell align="left">{row.amount}</TableCell>
                     <TableCell align="left">
-                      <span className="status" style={makeStyle(i)}>
-                        {i === 0 ? "Approved" : "finalized"}
+                      <span
+                        className="status"
+                        style={{
+                          background: "rgb(145 254 159 / 47%)",
+                          color: "green",
+                        }}
+                      >
+                        Approved
                       </span>
                     </TableCell>
                     <TableCell align="left" className="Details">
