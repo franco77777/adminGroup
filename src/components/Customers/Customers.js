@@ -61,7 +61,7 @@ const Customers = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.put(`http://flymatepf.herokuapp.com/api/users/makeAdmin`, {
+        await axios.put(`https://flymatepf.herokuapp.com/api/users/makeAdmin`, {
           email: b,
         })
         dispatch(customerFiltering(null))
@@ -90,7 +90,7 @@ const Customers = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.post("http://flymatepf.herokuapp.com/api/users/delete", {
+        await axios.post("https://flymatepf.herokuapp.com/api/users/delete", {
           email: b,
         })
         dispatch(customerFiltering(null))
@@ -119,7 +119,7 @@ const Customers = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.put(`http://flymatepf.herokuapp.com/api/users/banUser`, {
+        await axios.put(`https://flymatepf.herokuapp.com/api/users/banUser`, {
           email: b,
         })
         dispatch(customerFiltering(null))

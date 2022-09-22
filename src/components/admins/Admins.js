@@ -53,7 +53,7 @@ const Admins = () => {
     }).then(async response => {
       if (response.isConfirmed) {
         await axios.put(
-          `http://flymatepf.herokuapp.com/api/users/demoteAdmin`,
+          `https://flymatepf.herokuapp.com/api/users/demoteAdmin`,
           {
             email: b,
           }
@@ -84,7 +84,7 @@ const Admins = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.post("http://flymatepf.herokuapp.com/api/users/delete", {
+        await axios.post("https://flymatepf.herokuapp.com/api/users/delete", {
           email: b,
         })
         dispatch(adminFiltering(null))
@@ -113,7 +113,7 @@ const Admins = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.put(`http://flymatepf.herokuapp.com/api/users/banUser`, {
+        await axios.put(`https://flymatepf.herokuapp.com/api/users/banUser`, {
           email: b,
         })
         dispatch(adminFiltering(null))

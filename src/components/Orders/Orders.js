@@ -233,7 +233,7 @@ const Orders = ({ visual, setVisual, setEffect2, setEffect3 }) => {
     }
 
     const response = await axios.post(
-      "http://flymatepf.herokuapp.com/api/tickets/createPackage",
+      "https://flymatepf.herokuapp.com/api/tickets/createPackage",
       finalPackage
     )
 

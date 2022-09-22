@@ -52,7 +52,7 @@ const Banned = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.post("http://flymatepf.herokuapp.com/api/users/delete", {
+        await axios.post("https://flymatepf.herokuapp.com/api/users/delete", {
           email: b,
         })
         dispatch(bannedFiltering(null))
@@ -81,7 +81,7 @@ const Banned = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.put(`http://flymatepf.herokuapp.com/api/users/restore`, {
+        await axios.put(`https://flymatepf.herokuapp.com/api/users/restore`, {
           email: b,
         })
         dispatch(bannedFiltering(null))
@@ -110,7 +110,7 @@ const Banned = () => {
       confirmButtonColor: "#1890ff",
     }).then(async response => {
       if (response.isConfirmed) {
-        await axios.put(`http://flymatepf.herokuapp.com/api/users/makeAdmin`, {
+        await axios.put(`https://flymatepf.herokuapp.com/api/users/makeAdmin`, {
           email: b,
         })
         dispatch(bannedFiltering(null))
