@@ -1,0 +1,21 @@
+.form2 input::placeholder {
+  position: relative;
+  text-align: end;
+  top: -3px;
+}
+
+#pickers::placeholder {
+  text-align: center;
+}
+.config {
+}
+
+.buttonsIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableProduct {
+  width: 100%;
+}
