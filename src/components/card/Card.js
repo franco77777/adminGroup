@@ -15,7 +15,7 @@ const Card = props => {
   const today = new Date().toISOString().slice(0, 10)
   let datesNow = []
 
-  for (let i of tickets) {
+  /* for (let i of tickets) {
     let datenow = new Date(i.purchased).getFullYear()
     let datenow1 = new Date(i.purchased).getMonth() + 1
     let t1 = datenow1 < 10 ? "0" + datenow1 : datenow1
@@ -29,9 +29,9 @@ const Card = props => {
     let t5 = datenow5 < 10 ? "0" + datenow5 : datenow5
     let result = `${datenow}-${t1}-${t2}T${t3}:${t4}:${t5}.655Z`
     datesNow.push({ fare: i.fare, purchased: result })
-  }
+  } */
 
-  const dates = datesNow.filter(e => e.purchased.slice(0, 10) === today)
+  const dates = tickets.filter(e => e.purchased.slice(0, 10) === today)
 
   const ordered = dates.sort((a, b) => {
     var dateA = new Date(a.purchased).getTime()
@@ -46,7 +46,7 @@ const Card = props => {
 
   console.log("soy today", today)
   console.log("soy tickets", tickets)
-  console.log("soy datesNow", datesNow)
+
   console.log("soy dates", dates)
   console.log("soy ordered", ordered)
   const dispatch = useDispatch()
